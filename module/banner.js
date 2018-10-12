@@ -1,6 +1,6 @@
-define(function(){
-    function Banner(){
-        this.name = "im banner"
+define( function() {
+    function Pop(){
+        this.name = "I'm banner"
     };
-    return new Banner();
-})
+    return new Pop();
+});

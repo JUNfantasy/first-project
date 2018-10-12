@@ -1,0 +1,1 @@
+"use strict";function _classCallCheck(n,e){if(!(n instanceof e))throw new TypeError("Cannot call a class as a function")}define(function(){return new function(){this.name="I'm banner"}});var Foo=function n(){_classCallCheck(this,n),this.name="hello"};new Foo,define(function(){return new function(){this.name="I'm pop"}}),console.log("grow up");
