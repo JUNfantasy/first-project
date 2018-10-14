@@ -7,14 +7,16 @@ const uglify = require("gulp-uglify");
 //es6的编译
 //babel
 const babel = require("gulp-babel")
+//sass编译插件
+const sass = require("gulp-sass");
 // gulp.task("html",()=>{
 //     return gulp.src("index.html")
 //     .pipe(gulp.dest("dist/"))
 // })
 gulp.task("script",()=>{
     return gulp.src(["libs/*.js","module/*.js",
-    "!libs/tree.js"])
-    .pipe(gulp.dest("dist/scripts"));
+        "!libs/tree.js"])
+        .pipe(gulp.dest("dist/scripts"));
 })
 // gulp.task("default",["html","script"])
 //监听
@@ -42,12 +44,19 @@ gulp.task("connect",()=>{
 
 gulp.task("html",()=>{
     return gulp.src("index.html")
-    .pipe(gulp.dest("dist"))
-    //数据更新之后进行页面刷新
-    .pipe(connect.reload());
+        .pipe(gulp.dest("dist"))
+        //数据更新之后进行页面刷新
+        .pipe(connect.reload());
 })
 gulp.task("watch",()=>{
-    gulp.watch("index.html",["html"])
+    gulp.watch("index.html",["html","scss"])
+    gulp.watch("sass/*.scss",["html","scss"])
+})
+
+gulp.task("sass",()=>{
+    return gulp.src(["sass/*.scss"])
+        .pipe(sass().on("error",sass.logError))
+        .pipe(gulp.dest("dist/css"));
 })
 
 //合并 压缩插件

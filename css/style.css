@@ -1,0 +1,62 @@
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img{margin:0;padding:0;}
+html,body{font-size:12px;font-family:Microsoft Yahei;overflow-x:hidden;height:100%;}
+a,u,s{text-decoration:none;color:#000}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:12px;}
+fieldset, img{border:none;}
+ul,ol,li{list-style:none;}
+i,b{font-style:normal;display:inline-block;}
+.fl{float:left}
+.fr{float:right;}
+/* 头部 */
+.head{height:80px;min-width: 1200px;}
+
+.head .menu{width:624px;height:40px;margin:20px 0 0 37px;background:#fff;display:inline-block}
+.head .menu .logo{width:88px;height:40px;display:inline-block;float:left;background:url(http://www.wutuojia.com/images/wtj-logo.png) no-repeat 0px 0px;
+           background-size:contain}
+.head .menu .nav{width:431px;height:40px;margin-left:73px;float:left;line-height:40px;}
+.head .menu .nav li{float:left;width:92px;}
+.head .menu .nav .first{color:#ccc}
+.head .menu .nav  a{font-size:16px;width:32px;height:40px;line-height:40px;}
+.head .menu .nav .third{width:155px}
+.head .menu .nav .th-i{display:inline-block;height:18px;line-height:18px;background:#000;color:#fff;font-style:normal;border-radius:3px;}
+.head .menu .search{margin:10px 0 0 10px;float:left}
+.head .menu .search-btn{line-height:40px;width:22px;height:25px;display:inline-block;background:url(http://www.wutuojia.com/images/front/wtjicon.png) no-repeat 0 0}
+.head .menu .search-btn:hover{background:url(http://www.wutuojia.com/images/front/wtjicon.png) no-repeat -25px 0}
+.head .fr .collocation{float:left;line-height:80px;}
+.head .fr .collocation a{display:inline-block;width:100px;height:30px;line-height:30px;background:#000;color:#fff;
+        border-radius:20px;margin-top:25px;}
+.head .fr .collocation a  i{width:28px;height:19px;display:inline-block;background:url(http://www.wutuojia.com/images/front/mybuild_v2/mybuild_btn.png) no-repeat 0 0;
+         margin:5.5px 0 0 13px;background-size:contain;float:left} 
+.head .fr .collocation a h2{float:right;margin-right:5px;}       
+.head .fr .login{display:inline-block;width:70px;height:30px;padding:15px 0;margin:10px 0 0 40px;float:left;cursor: pointer;} 
+.head .fr .login i{width:30px;height:30px;background:url(http://www.wutuojia.com/images/front/mybuild_v2/login-no.png) no-repeat center center;} 
+.head .fr .login b{width:14px;height:14px;margin:8px 0 8px 10px;background-size:contain;background:url(http://www.wutuojia.com/images/arrow-3.png)  no-repeat 0 center}    
+.head a:hover{color:#ccc;}
+
+/* 轮播图 */
+.banner{height:548px;background:pink}
+.banner ul{width:7595px}
+.banner ul li img{display:inline-block;width:1519px;height:548px;}
+/* 主体框架及标题 */
+.w1200{width:1200px;margin:0 auto}
+.rec-commodity{margin-top:80px;overflow: hidden;background:#f2f3f4}
+.rec-commodity-head{height:44px;overflow: hidden;}
+.rec-name{font-size:34px;display:inline-block}
+.pro-nav{display:inline-block;padding:25px 25px 0 0}
+.pro-nav a{position:relative;color:#999}
+.pro-nav  i{position:absolute;bottom:0;left:24px;width:17px;height:17px;background:url(http://www.wutuojia.com/images/front/wtjicon.png) no-repeat -18px -26px;
+            margin:1px 0 0 7px}
+.pro-nav a:hover{color:#000;}
+.pro-nav a:hover i{background:url(http://www.wutuojia.com/images/front/wtjicon.png) no-repeat 0px -26px}
+.line{float:left;margin-bottom:80px}
+.line .bot{width:80px;height:80px;border-bottom:1px solid #000;margin:0 auto}
+/* 推荐商品 */
+.rec-commodity-ul{width:1240px}
+.rec-commodity-ul li{position:relative;width:300px;height:405px;float:left;margin-top:10px;background:#f19}
+/* 热门品牌 */
+.pop-brand{margin-bottom:80px}
+/* 底部 */
+.footer{width:1200px;height:356px;margin:0 auto;background:antiquewhite}
+
+
+
