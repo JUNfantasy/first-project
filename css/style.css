@@ -52,7 +52,17 @@ i,b{font-style:normal;display:inline-block;}
 .line .bot{width:80px;height:80px;border-bottom:1px solid #000;margin:0 auto}
 /* 推荐商品 */
 .rec-commodity-ul{width:1240px}
-.rec-commodity-ul li{position:relative;width:300px;height:405px;float:left;margin-top:10px;background:#f19}
+.rec-commodity-ul li{background:#fff;position:relative;width:300px;height:405px;float:left;margin-top:10px;}
+.commodity-box-main{position:absolute;padding:12px;}
+/* 图片 */
+.commodity-box-main .commodity-box-img{display:inline-block;width:276px;height:276px;background:#fff;}
+.commodity-box-img img{width:276px;height:276px}
+/* 文字 */
+.commodity-box-main .commodity-box-explain .impression{margin-top:15px;color:#999;text-indent:0px;}
+.commodity-box-explain .impression a{text-align:left}
+.commodity-box-explain .meterial{height:35px;line-height:35px;font-size:14px;overflow: hidden}
+.commodity-box-explain .attribute{margin-bottom:15px;color:#999;text-indent:0}
+
 /* 热门品牌 */
 .pop-brand{margin-bottom:80px}
 /* 底部 */
