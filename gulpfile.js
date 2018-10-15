@@ -8,7 +8,7 @@ const uglify = require("gulp-uglify");
 //babel
 const babel = require("gulp-babel")
 //sass编译插件
-const sass = require("gulp-sass");
+const sass = require("gulp-sass-china");
 // gulp.task("html",()=>{
 //     return gulp.src("index.html")
 //     .pipe(gulp.dest("dist/"))
