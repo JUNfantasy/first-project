@@ -10,7 +10,7 @@ i,b{font-style:normal;display:inline-block;}
 
 /* 头部 */
 .head{height:80px;min-width: 1200px;}
-
+  /* 左边 */
 .head .menu{width:624px;height:40px;margin:20px 0 0 37px;background:#fff;display:inline-block}
 .head .menu .logo{width:88px;height:40px;display:inline-block;float:left;background:url(http://www.wutuojia.com/images/wtj-logo.png) no-repeat 0px 0px;
            background-size:contain}
@@ -23,9 +23,12 @@ i,b{font-style:normal;display:inline-block;}
 .head .menu .search{margin:10px 0 0 10px;float:left}
 .head .menu .search-btn{line-height:40px;width:22px;height:25px;display:inline-block;background:url(http://www.wutuojia.com/images/front/wtjicon.png) no-repeat 0 0}
 .head .menu .search-btn:hover{background:url(http://www.wutuojia.com/images/front/wtjicon.png) no-repeat -25px 0}
+   /* 右边 */
 .head .fr .collocation{float:left;line-height:80px;}
 .head .fr .collocation a{display:inline-block;width:100px;height:30px;line-height:30px;background:#000;color:#fff;
-        border-radius:20px;margin-top:25px;}
+        border-radius:20px;margin-top:25px;position: relative;}
+.head .fr .collocation a div{width:100px;height:30px;position: absolute;background:#f0f0f0;opacity:0;} 
+.head .fr .collocation a:hover  div{opacity: .3;}          
 .head .fr .collocation a  i{width:28px;height:19px;display:inline-block;background:url(http://www.wutuojia.com/images/front/mybuild_v2/mybuild_btn.png) no-repeat 0 0;
          margin:5.5px 0 0 13px;background-size:contain;float:left} 
 .head .fr .collocation a h2{float:right;margin-right:5px;}       
@@ -35,10 +38,29 @@ i,b{font-style:normal;display:inline-block;}
 .head a:hover{color:#ccc;}
 
 /* 轮播图 */
-.banner{height:548px;background:pink}
-.banner ul{width:7595px}
-.banner ul li img{display:inline-block;width:1519px;height:548px;}
-
+.banner{min-width:1200px;position: relative}
+.banner .ban-slide{height:548px;background: pink}
+  /* 左右按钮 */
+.ban-slide p{display:inline-block;width:42px;height:78px;position: absolute;top:50%;margin-top:-35px;cursor: pointer;
+    background: url(http://www.wutuojia.com/images/front/wtjicon.png) no-repeat  -125px -30px}
+.ban-slide .prev{left:10px;}
+.ban-slide .next{right:10px;background-position: -168px -30px}
+.ban-slide .prev:hover{background-position-x: -220px}
+.ban-slide .next:hover{background-position-x: -265px}
+  /* 轮播图片 */
+.ban-slide .pic{width:1519px;position: relative;overflow: hidden;}
+.pic ul{width:7595px}
+.pic ul li img{display:inline-block;width:1519px;height:548px;}
+/* 一级菜单 */
+.banner .ban-menu{position: absolute;top:30px;left:40px;width:90px;z-index:999}
+.ban-menu li{height:45px;line-height:45px;text-align: center;border: 1px solid #f0f0f0;background:#fff;cursor: pointer;}
+.ban-menu li:first-child{border: none}
+.ban-menu li h3{font-size:14px;}
+   /* 二级菜单 */
+.ban-menu-hover{width:440px;height:186px;background:#111;position: absolute;top:0;left:90px;z-index:999;display:none}
+.ban-menu-hover .ban-menu-boxs{margin:30px 0 30px 50px}
+.ban-menu-boxs .cow-banner{width:30%;float:left;overflow: hidden;}
+.cow-banner a{height:26px;line-height:26px;display:block;text-align: left;color:#fff;}
 /* 主体框架及标题 */
 .w1200{width:1200px;margin:0 auto}
 .rec-commodity{margin-top:80px;overflow: hidden;}
@@ -139,8 +161,8 @@ i,b{font-style:normal;display:inline-block;}
         background:url(http://www.wutuojia.com/images/front/wtjicon.png) no-repeat -125px -30px}
 .popBanner .prev{background-position: -189px -465px;left:90px}
 .popBanner .next{background-position: -203px -465px;right:25px}
-.prev:hover{background-position: -219px -465px;}
-.next:hover{background-position: -233px -465px;}
+.popBanner .prev:hover{background-position: -219px -465px;}
+.popBanner .next:hover{background-position: -233px -465px;}
 /* 轮播图 */
 .popBanner .bgi{height:618px;background:url(http://www.wutuojia.com/images/front/topbrand1.jpg) no-repeat 0 0}
 .bgi .tempWrap{width:1200px;position: relative;overflow: hidden;}

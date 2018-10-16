@@ -7,10 +7,12 @@
     <title>乌托家</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="libs/banner.js"></script>
+    <script src="libs/jquery.js"></script>
 </head>
 <body>
     <!-- -----头部----- -->
     <div class="head">
+        <!-- 左边 -->
         <div class="menu  fl">
             <a href="http://www.wutuojia.com/" class="logo "></a>
             <div class="nav">
@@ -28,11 +30,13 @@
                 <a href="javascript:;" class="search-btn"></a>
             </div>           
         </div>
+        <!-- 右边 -->
         <div class="fr">
             <div class="collocation">
                 <a href="http://www.wutuojia.com/create/" target="_blank">
                     <i></i>
                     <h2>创建搭配</h2>
+                    <div></div>
                 </a>
             </div>
             <span class="login">
@@ -43,13 +47,140 @@
     </div>
     <!-- ------轮播图------ -->
     <div class="banner">
-        <ul>
-            <li><img src="" alt=""></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <div id="banner" class="ban-slide">
+            <!-- 按钮 -->
+            <p class="prev"></p>
+            <p class="next"></p>
+            <div class="pic">
+                <ul>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>            
+        </div> 
+        <div class="ban-menu">
+            <ul id="ul">
+                <li>
+                    <h3>风格</h3>
+                    <div class="ban-menu-hover">
+                        <div class="ban-menu-boxs">
+                            <div class="cow-banner">
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=style-14" target="_blank">欧式</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=style-16">田园</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=style-41" target="_blank">新中式</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=style-42" target="_blank">简约现代</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=style-18" target="_blank">地中海</a>
+                            </div>
+                            <div class="cow-banner">
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=style-19" target="_blank">北欧/宜家</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=style-20">东南亚</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=style-21" target="_blank">新古典</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=style-23">日式</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=style-24">韩式</a>
+                            </div>
+                            <div class="cow-banner">
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=style-26">复古怀旧</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=style-40" target="_blank">美式</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=style-43" target="_blank">法式</a>
+                                <a rel="nofollow" href="javascript:;" target="_blank">简约</a>
+                                <a rel="nofollow" href="javascript:;" target="_blank">前卫</a>
+                            </div>
+                            <div class="cow-banner">
+                                <a rel="nofollow" href="javascript:;" target="_blank">北欧风</a>
+                                <a rel="nofollow" href="javascript:;" target="_blank">工业风</a>
+                                <a rel="nofollow" href="javascript:;" target="_blank">简欧</a>
+                                <a rel="nofollow" href="javascript:;" target="_blank">欧式古典</a>
+                                <a rel="nofollow" href="javascript:;" target="_blank">传统中式</a>
+                            </div>
+                            <div class="cow-banner">
+                                <a rel="nofollow" href="javascript:;" target="_blank">新亚洲</a>
+                                <a rel="nofollow" href="javascript:;" target="_blank">Art Deco</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h3>空间</h3>
+                    <div class="ban-menu-hover">
+                        <div class="ban-menu-boxs">
+                            <div class="cow-banner">
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=space-25" target="_blank">客厅</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=space-26" target="_blank">卧室</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=space-27" target="_blank">厨房</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=space-28" target="_blank">餐厅</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=space-29" target="_blank">卫浴间</a>
+                            </div>
+                            <div class="cow-banner">
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=space-30" target="_blank">衣帽间</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=space-31" target="_blank">书房</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=space-32" target="_blank">儿童房</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=space-33" target="_blank">男孩房</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=space-34" target="_blank">女孩房</a>
+                            </div>
+                            <div class="cow-banner">
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=space-35" target="_blank">婴儿房</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=space-36" target="_blank">玄关</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=space-37" target="_blank">阳台</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=space-38" target="_blank">角落</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=space-39" target="_blank">花园</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h3>家具</h3>
+                    <div class="ban-menu-hover">
+                        <div class="ban-menu-boxs">
+                            <div class="cow-banner">
+                                <a rel="nofollow" href="http://www.wutuojia.com/item/7/" target="_blank">玄关台</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/item/30/" target="_blank">衣柜</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/item/10/" target="_blank">床</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/item/46/" target="_blank">床头柜</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/item/52/" target="_blank">茶几</a>
+                            </div>
+                            <div class="cow-banner">
+                                <a rel="nofollow" href="http://www.wutuojia.com/item/70/" target="_blank">沙发</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/item/107/" target="_blank">书桌</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/item/116/" target="_blank">餐桌</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h3>主题</h3>
+                    <div class="ban-menu-hover">
+                        <div class="ban-menu-boxs">
+                            <div class="cow-banner">
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=theme-28" target="_blank">宜家</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=theme-29" target="_blank">小清新</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=theme-30" target="_blank">小户型</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=theme-31" target="_blank">背景墙</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=theme-32" target="_blank">壁咚女人心</a>
+                            </div>
+                            <div class="cow-banner">
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=theme-33" target="_blank">个性色彩</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=theme-34" target="_blank">彪悍的空间利用</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=theme-35" target="_blank">开放式厨房</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=theme-36" target="_blank">我们都是粉色控</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=theme-37" target="_blank">我们都是重口味</a>
+                            </div>
+                            <div class="cow-banner">
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=theme-48" target="_blank">童趣</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=theme-49" target="_blank">睡公主</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=theme-50" target="_blank">最炫华丽风</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=theme-51" target="_blank">为青春造势</a>
+                                <a rel="nofollow" href="http://www.wutuojia.com/idea/?facetEx=theme-52" target="_blank">高科技智能</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>            
+        </div>      
     </div>
     <!-- ----推荐商品---- -->
     <div class="w1200 rec-commodity">
