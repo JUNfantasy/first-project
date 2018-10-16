@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>乌托家</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/index.js"></script>
     <script src="jquery.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <!-- -----头部----- -->
@@ -47,24 +47,30 @@
     </div>
     <!-- ------轮播图------ -->
     <div class="banner">
-        <div id="banner" class="ban-slide">
-            <!-- 按钮 -->
-            <p class="prev"></p>
-            <p class="next"></p>
-            <div class="pic">
-                <ul>
+        <div id="wrap" class="ban-slide">            
+            <div class="pic" id="box">
+                <!-- 按钮 -->                
+                <p class="prev" id="left"></p>
+                <p class="next" id="right"></p>
+                <ul id="list">
                     <li>
-                        <img src="" alt="">
+                        <div style="background:url(http://img1.wutuojia.com/inspire/su14/20180930/171302_758103.jpg) no-repeat 50% 50%"></div>
                     </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <div style="background:url(http://img1.wutuojia.com/inspire/su14/20180928/194645_45060.jpg) no-repeat 50% 50%"></div>
+                    </li>
+                    <li>
+                        <div style="background:url(http://img1.wutuojia.com/inspire/su14/20180930/163743_228551.jpg) no-repeat 50% 50%"></div>
+                    </li>
+                    <li>
+                        <div style="background:url(http://img1.wutuojia.com/inspire/su14/20180930/171302_758103.jpg) no-repeat 50% 50%"></div>                        
+                    </li>
                 </ul>
             </div>            
-        </div> 
+        </div>
+        <!-- 菜单 -->
         <div class="ban-menu">
-            <ul id="ul">
+            <ul class="list">
                 <li>
                     <h3>风格</h3>
                     <div class="ban-menu-hover">
@@ -180,7 +186,8 @@
                     </div>
                 </li>
             </ul>            
-        </div>      
+        </div> 
+             
     </div>
     <!-- ----推荐商品---- -->
     <div class="w1200 rec-commodity">
@@ -602,7 +609,7 @@
                 <img src="http://www.wutuojia.com/images/arrow.png" alt="">
             </div>
         </div>
-        <div class="works">
+        <div class="works works1">
             <div class="fl author-info">
                 <a href="">
                     <img src="http://img2.wutuojia.com/pic/sq_small/user/icon/20160704/132232_590689.jpg" alt="" class="author-img">
@@ -710,7 +717,7 @@
                     </li>
                     <li>
                         <a href="http://www.wutuojia.com/item/T-4448.html" target="_blank" class="work-img-a" rel="nofollow"> 
-                            <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20151104/190851_841213.png" alt="拼色拉链腰靠枕套"> 
+                            <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20151104/190851_841213.png" alt="拼色拉链腰靠枕套" style="margin-top:20px"> 
                             <span></span> 
                         </a>
                         <h3>
@@ -720,7 +727,7 @@
                     </li>
                     <li>
                         <a href="http://www.wutuojia.com/item/T-4443.html" target="_blank" class="work-img-a" rel="nofollow"> 
-                            <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20151104/190555_705198.png" alt="透明彩色鱼缸吊灯"> 
+                            <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20151104/190555_705198.png" alt="透明彩色鱼缸吊灯" style="height:110px;width:82px"> 
                             <span></span> 
                         </a>
                         <h3>
@@ -745,26 +752,46 @@
             <div class="fr work-div">
                 <ul class="work-div-ul">
                 <li>
-                        <a href="http://www.wutuojia.com/item/T-7983.html" target="_blank" class="work-ul-a" rel="nofollow"> <img src="http://img2.wutuojia.com/pic/small/ec_product/20160415/201556_826244.jpg" alt="地毯客厅黑白条纹地毯羊毛客厅茶几卧室书房时尚现代腈纶定做"> <span></span> </a>
-                        <h3><a href="http://www.wutuojia.com/item/T-7983.html" target="_blank" title="地毯客厅黑白条纹地毯羊毛客厅茶几卧室书房时尚现代腈纶定做" rel="nofollow">
-                            地毯客厅黑白条纹地毯羊毛客厅茶几...</a></h3>
-                        </li>
-                    <li>
-                        <a href="http://www.wutuojia.com/item/T-9013.html" target="_blank" class="work-img-a" rel="nofollow"> <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20160617/152556_359554.png" alt="【拉赫蒂/lahti】redondo 2-seat sofa 215雷东多2-seat沙发215"> <span></span> </a>
-                        <h3><a href="http://www.wutuojia.com/item/T-9013.html" target="_blank" title="【拉赫蒂/lahti】redondo 2-seat sofa 215雷东多2-seat沙发215" rel="nofollow">
-                            【拉赫蒂/lahti】redon...</a></h3>
-                        </li>
-                    <li>
-                        <a href="http://www.wutuojia.com/item/T-9026.html" target="_blank" class="work-img-a" rel="nofollow"> <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20160617/162500_98468.png" alt="现代简约美式乡村工业风金属落地灯别墅酒店客厅灯样板房装饰地灯"> <span></span> </a>
-                        <h3><a href="http://www.wutuojia.com/item/T-9026.html" target="_blank" title="现代简约美式乡村工业风金属落地灯别墅酒店客厅灯样板房装饰地灯" rel="nofollow">
-                            现代简约美式乡村工业风金属落地灯...</a></h3>
-                        </li>
-                    <li>
-                        <a href="http://www.wutuojia.com/item/T-4848.html" target="_blank" class="work-img-a" rel="nofollow"> <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20151112/165339_936565.png" alt="C形小茶几"> <span></span> </a>
-                        <h3><a href="http://www.wutuojia.com/item/T-4848.html" target="_blank" title="C形小茶几" rel="nofollow">
-                            C形小茶几</a></h3>
-                        </li>
-                    </ul>
+                    <a href="http://www.wutuojia.com/item/T-7983.html" target="_blank" class="work-ul-a" rel="nofollow"> 
+                        <img src="http://img2.wutuojia.com/pic/small/ec_product/20160415/201556_826244.jpg" alt="地毯客厅黑白条纹地毯羊毛客厅茶几卧室书房时尚现代腈纶定做"> 
+                        <span></span> 
+                    </a>
+                    <h3>
+                        <a href="http://www.wutuojia.com/item/T-7983.html" target="_blank" title="地毯客厅黑白条纹地毯羊毛客厅茶几卧室书房时尚现代腈纶定做" rel="nofollow">
+                        地毯客厅黑白条纹地毯羊毛客厅茶几...</a>
+                    </h3>
+                </li>
+                <li>
+                    <a href="http://www.wutuojia.com/item/T-9013.html" target="_blank" class="work-img-a" rel="nofollow"> 
+                        <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20160617/152556_359554.png" alt="【拉赫蒂/lahti】redondo 2-seat sofa 215雷东多2-seat沙发215" style="margin-top:30px"> 
+                        <span></span> 
+                    </a>
+                    <h3>
+                        <a href="http://www.wutuojia.com/item/T-9013.html" target="_blank" title="【拉赫蒂/lahti】redondo 2-seat sofa 215雷东多2-seat沙发215" rel="nofollow">
+                        【拉赫蒂/lahti】redon...</a>
+                    </h3>
+                </li>
+                <li>
+                    <a href="http://www.wutuojia.com/item/T-9026.html" target="_blank" class="work-img-a" rel="nofollow"> 
+                        <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20160617/162500_98468.png" alt="现代简约美式乡村工业风金属落地灯别墅酒店客厅灯样板房装饰地灯" style="width:53px;height:110px;margin-left:30px"> 
+                        <span></span> 
+                    </a>
+                    <h3>
+                        <a href="http://www.wutuojia.com/item/T-9026.html" target="_blank" title="现代简约美式乡村工业风金属落地灯别墅酒店客厅灯样板房装饰地灯" rel="nofollow">
+                        现代简约美式乡村工业风金属落地灯...</a>
+                    </h3>
+                </li>
+                <li>
+                    <a href="http://www.wutuojia.com/item/T-4848.html" target="_blank" class="work-img-a" rel="nofollow"> 
+                        <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20151112/165339_936565.png" alt="C形小茶几" style="width:66px;margin-left:22px"> 
+                        <span></span> 
+                    </a>
+                    <h3>
+                        <a href="http://www.wutuojia.com/item/T-4848.html" target="_blank" title="C形小茶几" rel="nofollow">
+                        C形小茶几</a>
+                    </h3>
+                </li>
+                </ul>
             </div>
         </div>
         <div class="clearfix works works4" style="display: none;">
@@ -779,29 +806,54 @@
             </div>
             <div class="fr work-div">
                 <ul class="work-div-ul">
-                <li>
-                        <a href="http://www.wutuojia.com/item/T-5619.html" target="_blank" class="work-ul-a" rel="nofollow"> <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20151128/153355_553641.png" alt="卡通小马被子床单四件套"> <span></span> </a>
-                        <h3><a href="http://www.wutuojia.com/item/T-5619.html" target="_blank" title="卡通小马被子床单四件套" rel="nofollow">
-                            卡通小马被子床单四件套</a></h3>
-                        </li>
                     <li>
-                        <a href="http://www.wutuojia.com/item/T-5624.html" target="_blank" class="work-img-a" rel="nofollow"> <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20151128/154113_152000.png" alt="儿童涂鸦 艺术壁纸"> <span></span> </a>
-                        <h3><a href="http://www.wutuojia.com/item/T-5624.html" target="_blank" title="儿童涂鸦 艺术壁纸" rel="nofollow">
-                            儿童涂鸦 艺术壁纸</a></h3>
-                        </li>
+                        <a href="http://www.wutuojia.com/item/T-5619.html" target="_blank" class="work-ul-a" rel="nofollow"> 
+                            <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20151128/153355_553641.png" alt="卡通小马被子床单四件套"> 
+                            <span></span> 
+                        </a>
+                        <h3>
+                            <a href="http://www.wutuojia.com/item/T-5619.html" target="_blank" title="卡通小马被子床单四件套" rel="nofollow">
+                            卡通小马被子床单四件套</a>
+                        </h3>
+                    </li>
                     <li>
-                        <a href="http://www.wutuojia.com/item/T-5616.html" target="_blank" class="work-img-a" rel="nofollow"> <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20151128/153220_847120.png" alt="儿童椅造型椅 小马烤漆椅"> <span></span> </a>
-                        <h3><a href="http://www.wutuojia.com/item/T-5616.html" target="_blank" title="儿童椅造型椅 小马烤漆椅" rel="nofollow">
-                            儿童椅造型椅 小马烤漆椅</a></h3>
-                        </li>
+                        <a href="http://www.wutuojia.com/item/T-5624.html" target="_blank" class="work-img-a" rel="nofollow"> 
+                            <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20151128/154113_152000.png" alt="儿童涂鸦 艺术壁纸"> 
+                            <span></span> 
+                        </a>
+                        <h3>
+                            <a href="http://www.wutuojia.com/item/T-5624.html" target="_blank" title="儿童涂鸦 艺术壁纸" rel="nofollow">
+                            儿童涂鸦 艺术壁纸</a>
+                        </h3>
+                    </li>
                     <li>
-                        <a href="http://www.wutuojia.com/item/T-5621.html" target="_blank" class="work-img-a" rel="nofollow"> <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20151128/153502_73150.png" alt="呆萌小动物卡通抱枕靠枕居家用品 "> <span></span> </a>
-                        <h3><a href="http://www.wutuojia.com/item/T-5621.html" target="_blank" title="呆萌小动物卡通抱枕靠枕居家用品 " rel="nofollow">
-                            呆萌小动物卡通抱枕靠枕居家用品 </a></h3>
-                        </li>
-                    </ul>
+                        <a href="http://www.wutuojia.com/item/T-5616.html" target="_blank" class="work-img-a" rel="nofollow"> 
+                            <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20151128/153220_847120.png" alt="儿童椅造型椅 小马烤漆椅"> 
+                            <span></span> 
+                        </a>
+                        <h3>
+                            <a href="http://www.wutuojia.com/item/T-5616.html" target="_blank" title="儿童椅造型椅 小马烤漆椅" rel="nofollow">
+                            儿童椅造型椅 小马烤漆椅</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <a href="http://www.wutuojia.com/item/T-5621.html" target="_blank" class="work-img-a" rel="nofollow"> 
+                            <img src="http://img2.wutuojia.com/pic/small/mybuild/thing/20151128/153502_73150.png" alt="呆萌小动物卡通抱枕靠枕居家用品 " style="width:87px;margin-left:10px"> 
+                            <span></span> 
+                        </a>
+                        <h3>
+                            <a href="http://www.wutuojia.com/item/T-5621.html" target="_blank" title="呆萌小动物卡通抱枕靠枕居家用品 " rel="nofollow">
+                            呆萌小动物卡通抱枕靠枕居家用品 </a>
+                        </h3>
+                    </li>
+                </ul>
             </div>
         </div>
+        <script>
+            
+        </script>
+        <script>
+        </script>
         <!-- ----分割线---- -->
         <div class="w1200 line">
             <div class="bot"></div>
@@ -1028,12 +1080,97 @@
                 <div class="bgi">
                     <div class="tempWrap">
                         <ul>
+                            <!-- 骏业家具 -->
                             <li>
                                 <div class="tw-img">
                                     <div class="tw-img-slide">
+                                        <!-- 大厂直供 -->
+                                         <div class="banner-com">
+                                            <i></i>
+                                        </div>
+                                        <!-- logo -->
+                                         <div class="pb-logo-div">
+                                            <div class="pb-logo">
+                                                <a href="http://www.wutuojia.com/brand/Junyejiaju/" target="_blank">
+                                                    <div class="logo-brand">
+                                                        <div>
+                                                            <img data-original="http://img2.wutuojia.com/pic/small/shop/brand/20151201/194319_287341.jpg" src="http://img2.wutuojia.com/pic/small/shop/brand/20151201/194319_287341.jpg" alt="骏业家具" class="">
+                                                        </div>
+                                                        <p>骏业家具</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="pb-content">
+                                                <h2>小空间，大智慧</h2>
+                                                <p>追求全实木情怀</p>
+                                            </div>
+                                            <div class="pb-bg"></div>
+                                        </div>
+                                        <!-- 内容 -->
+                                         <div class="pb-main">
+                                            <a href="http://www.wutuojia.com/item/2296.html" target="_blank">
+                                                <div class="pb-main-img">
+                                                    <img data-original="http://img2.wutuojia.com/pic/middle/product/t59/b128/20151208/135848_111376.png" src="http://img2.wutuojia.com/pic/middle/product/t59/b128/20151208/135848_111376.png" alt="骏业8090系列现代中式橡木红樱桃色墙壁酒架" class="inspiration-img" style="display: inline;">
+                                                    <span></span>
+                                                </div>
+                                                <p>骏业8090系列现代中...</p>
+                                                <p class="brand-price">
+                                                    <em>¥</em>&nbsp;<span>995.00</span>
+                                                </p>
+                                            </a>
+                                            <a href="http://www.wutuojia.com/item/2260.html" target="_blank">
+                                                <div class="pb-main-img">
+                                                    <img data-original="http://img2.wutuojia.com/pic/middle/product/t14/b128/20151207/172416_531477.png" src="http://img2.wutuojia.com/pic/middle/product/t14/b128/20151207/172416_531477.png" alt="骏业8090系列现代中式橡木红樱桃色实木床" class="inspiration-img" style="display: inline;">
+                                                    <span></span>
+                                                </div>
+                                                <p>骏业8090系列现代中...</p>
+                                                <p class="brand-price">
+                                                    <em>¥</em>&nbsp;<span>4420.00</span>
+                                                </p>
+                                            </a>
+                                            <a href="http://www.wutuojia.com/item/2275.html" target="_blank">
+                                                <div class="pb-main-img">
+                                                    <img data-original="http://img2.wutuojia.com/pic/middle/product/t108/b128/20151208/105158_300555.png" src="http://img2.wutuojia.com/pic/middle/product/t108/b128/20151208/105158_300555.png" alt="骏业8090系列现代中式橡木黑胡桃色梳妆镜台" class="inspiration-img" style="display: inline;">
+                                                    <span></span>
+                                                </div>
+                                                <p>骏业8090系列现代中...</p>
+                                                <p class="brand-price">
+                                                    <em>¥</em>&nbsp;<span>1845.00</span>
+                                                </p>
+                                            </a>
+                                            <a href="http://www.wutuojia.com/item/2262.html" target="_blank">
+                                                <div class="pb-main-img">
+                                                    <img data-original="http://img2.wutuojia.com/pic/middle/product/t52/b128/20151207/165359_475185.png" src="http://img2.wutuojia.com/pic/middle/product/t52/b128/20151207/165359_475185.png" alt="骏业8090系列现代中式橡木黑胡桃色木面长茶几" class="inspiration-img" style="display: inline;">
+                                                    <span></span>
+                                                </div>
+                                                <p>骏业8090系列现代中...</p>
+                                                <p class="brand-price">
+                                                    <em>¥</em>&nbsp;<span>2845.00</span>
+                                                </p>
+                                            </a>
+                                            <a href="http://www.wutuojia.com/item/2291.html" target="_blank">
+                                                <div class="pb-main-img">
+                                                <img data-original="http://img2.wutuojia.com/pic/middle/product/t38/b128/20151208/122017_41585.png" src="http://img2.wutuojia.com/pic/middle/product/t38/b128/20151208/122017_41585.png" alt="骏业8090系列现代中式橡木红樱桃色小酒柜" class="inspiration-img" style="display: inline;">
+                                                <span></span>
+                                                </div>
+                                                <p>骏业8090系列现代中...</p>
+                                                <p class="brand-price">
+                                                    <em>¥</em>&nbsp;<span>3370.00</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>                                                                   
+                                </div>
+                            </li>
+                            <!-- 施华洛家具 -->
+                            <li>
+                                <div class="tw-img">
+                                    <div class="tw-img-slide">
+                                        <!-- 大厂直供 -->
                                         <div class="banner-com">
                                             <i></i>
                                         </div>
+                                        <!-- logo -->
                                         <div class="pb-logo-div">
                                             <div class="pb-logo">
                                                 <a href="">
@@ -1051,6 +1188,7 @@
                                             </div> 
                                             <div class="pb-bg"></div>                                           
                                         </div>
+                                        <!-- 内容 -->
                                         <div class="pb-main">
                                             <a href="http://www.wutuojia.com/item/1966.html" target="_blank">
                                                 <div class="pb-main-img">
@@ -1098,6 +1236,170 @@
                                             </a>
                                         </div>
                                     </div>
+                                </div>
+                            </li>
+                            <!-- 奥帝 -->
+                            <li>
+                                <div class="tw-img">
+                                    <div class="tw-img-slide">
+                                        <!-- 大厂直供 -->
+                                        <div class="banner-com">
+                                            <i></i>
+                                        </div>
+                                        <!-- logo -->
+                                        <div class="pb-logo-div">
+                                            <div class="pb-logo">
+                                                <a href="http://www.wutuojia.com/brand/Aodi/" target="_blank">
+                                                <div class="logo-brand">
+                                                    <div class=""><img data-original="http://img2.wutuojia.com/pic/small/shop/brand/20151203/135756_196021.jpg" src="http://img2.wutuojia.com/pic/small/shop/brand/20151203/135756_196021.jpg" alt="奥帝" class=""></div>
+                                                    <p>奥帝</p>
+                                                </div>
+                                                </a>
+                                            </div>
+                                            <div class="pb-content">
+                                                <h2>服务于大众</h2>
+                                                <p>生产在艺术之中</p>
+                                            </div>
+                                            <div class="pb-bg"></div>
+                                        </div>
+                                        <!-- 内容 -->
+                                        <div class="pb-main">
+                                            <a href="http://www.wutuojia.com/item/2162.html" target="_blank">
+                                                <div class="pb-main-img">
+                                                    <img data-original="http://img2.wutuojia.com/pic/middle/product/t77/b131/20151203/212435_981906.png" src="http://img2.wutuojia.com/pic/middle/product/t77/b131/20151203/212435_981906.png" alt="奥帝A8系列简约现代进口真皮黑色皮艺沙发" class="inspiration-img" style="display: inline;">
+                                                    <span></span>
+                                                </div>
+                                                <p>奥帝A8系列简约现代进...</p>
+                                                <p class="brand-price">
+                                                    <em>¥</em>&nbsp;<span>1440.00</span>
+                                                </p>
+                                            </a>
+                                            <a href="http://www.wutuojia.com/item/2206.html" target="_blank">
+                                                <div class="pb-main-img">
+                                                    <img data-original="http://img2.wutuojia.com/pic/middle/product/t46/b131/20151204/145503_141729.png" src="http://img2.wutuojia.com/pic/middle/product/t46/b131/20151204/145503_141729.png" alt="奥帝A8系列简约现代松木白色床头柜" class="inspiration-img" style="display: inline;">
+                                                    <span></span>
+                                                </div>
+                                                <p>奥帝A8系列简约现代松...</p>
+                                                <p class="brand-price">
+                                                    <em>¥</em>&nbsp;<span>940.00</span>
+                                                </p>
+                                            </a>
+                                            <a href="http://www.wutuojia.com/item/2189.html" target="_blank">
+                                                <div class="pb-main-img">
+                                                    <img data-original="http://img2.wutuojia.com/pic/middle/product/t15/b131/20151204/121303_965720.png" src="http://img2.wutuojia.com/pic/middle/product/t15/b131/20151204/121303_965720.png" alt="奥帝春风系列简约现代进口真皮白色皮艺床" class="inspiration-img" style="display: inline;">
+                                                    <span></span>
+                                                </div>
+                                                <p>奥帝春风系列简约现代进...</p>
+                                                <p class="brand-price">
+                                                    <em>¥</em>&nbsp;<span>4100.00</span>
+                                                </p>
+                                            </a>
+                                            <a href="http://www.wutuojia.com/item/2175.html" target="_blank">
+                                                <div class="pb-main-img">
+                                                    <img data-original="http://img2.wutuojia.com/pic/middle/product/t15/b131/20151204/103041_348819.png" src="http://img2.wutuojia.com/pic/middle/product/t15/b131/20151204/103041_348819.png" alt="奥帝A8系列简约现代进口真皮黑色皮艺床" class="inspiration-img" style="display: inline;">
+                                                    <span></span>
+                                                </div>
+                                                <p>奥帝A8系列简约现代进...</p>
+                                                <p class="brand-price">
+                                                    <em>¥</em>&nbsp;<span>5700.00</span>
+                                                </p>
+                                            </a>
+                                            <a href="http://www.wutuojia.com/item/2158.html" target="_blank">
+                                                <div class="pb-main-img">
+                                                    <img data-original="http://img2.wutuojia.com/pic/middle/product/t79/b131/20151203/210105_793078.png" src="http://img2.wutuojia.com/pic/middle/product/t79/b131/20151203/210105_793078.png" alt="奥帝A8系列简约现代进口真皮白色贵妃椅" class="inspiration-img" style="display: inline;">
+                                                    <span></span>
+                                                </div>
+                                                <p>奥帝A8系列简约现代进...</p>
+                                                <p class="brand-price">
+                                                    <em>¥</em>&nbsp;
+                                                    <span>3760.00</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>                               
+                                </div>
+                            </li>
+                            <!-- 骏业家具 -->
+                            <li>
+                                <div class="tw-img">
+                                    <div class="tw-img-slide">
+                                        <!-- 大厂直供 -->
+                                        <div class="banner-com">
+                                            <i></i>
+                                        </div>
+                                        <!-- logo -->
+                                        <div class="pb-logo-div">
+                                            <div class="pb-logo">
+                                                <a href="http://www.wutuojia.com/brand/Junyejiaju/" target="_blank">
+                                                    <div class="logo-brand">
+                                                        <div>
+                                                            <img data-original="http://img2.wutuojia.com/pic/small/shop/brand/20151201/194319_287341.jpg" src="http://img2.wutuojia.com/pic/small/shop/brand/20151201/194319_287341.jpg" alt="骏业家具" class="">
+                                                        </div>
+                                                        <p>骏业家具</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="pb-content">
+                                                <h2>小空间，大智慧</h2>
+                                                <p>追求全实木情怀</p>
+                                            </div>
+                                            <div class="pb-bg"></div>
+                                        </div>
+                                        <!-- 内容 -->
+                                        <div class="pb-main">
+                                            <a href="http://www.wutuojia.com/item/2296.html" target="_blank">
+                                                <div class="pb-main-img">
+                                                    <img data-original="http://img2.wutuojia.com/pic/middle/product/t59/b128/20151208/135848_111376.png" src="http://img2.wutuojia.com/pic/middle/product/t59/b128/20151208/135848_111376.png" alt="骏业8090系列现代中式橡木红樱桃色墙壁酒架" class="inspiration-img" style="display: inline;">
+                                                    <span></span>
+                                                </div>
+                                                <p>骏业8090系列现代中...</p>
+                                                <p class="brand-price">
+                                                    <em>¥</em>&nbsp;<span>995.00</span>
+                                                </p>
+                                            </a>
+                                            <a href="http://www.wutuojia.com/item/2260.html" target="_blank">
+                                                <div class="pb-main-img">
+                                                    <img data-original="http://img2.wutuojia.com/pic/middle/product/t14/b128/20151207/172416_531477.png" src="http://img2.wutuojia.com/pic/middle/product/t14/b128/20151207/172416_531477.png" alt="骏业8090系列现代中式橡木红樱桃色实木床" class="inspiration-img" style="display: inline;">
+                                                    <span></span>
+                                                </div>
+                                                <p>骏业8090系列现代中...</p>
+                                                <p class="brand-price">
+                                                    <em>¥</em>&nbsp;<span>4420.00</span>
+                                                </p>
+                                            </a>
+                                            <a href="http://www.wutuojia.com/item/2275.html" target="_blank">
+                                                <div class="pb-main-img">
+                                                    <img data-original="http://img2.wutuojia.com/pic/middle/product/t108/b128/20151208/105158_300555.png" src="http://img2.wutuojia.com/pic/middle/product/t108/b128/20151208/105158_300555.png" alt="骏业8090系列现代中式橡木黑胡桃色梳妆镜台" class="inspiration-img" style="display: inline;">
+                                                    <span></span>
+                                                </div>
+                                                <p>骏业8090系列现代中...</p>
+                                                <p class="brand-price">
+                                                    <em>¥</em>&nbsp;<span>1845.00</span>
+                                                </p>
+                                            </a>
+                                            <a href="http://www.wutuojia.com/item/2262.html" target="_blank">
+                                                <div class="pb-main-img">
+                                                    <img data-original="http://img2.wutuojia.com/pic/middle/product/t52/b128/20151207/165359_475185.png" src="http://img2.wutuojia.com/pic/middle/product/t52/b128/20151207/165359_475185.png" alt="骏业8090系列现代中式橡木黑胡桃色木面长茶几" class="inspiration-img" style="display: inline;">
+                                                    <span></span>
+                                                </div>
+                                                <p>骏业8090系列现代中...</p>
+                                                <p class="brand-price">
+                                                    <em>¥</em>&nbsp;<span>2845.00</span>
+                                                </p>
+                                            </a>
+                                            <a href="http://www.wutuojia.com/item/2291.html" target="_blank">
+                                                <div class="pb-main-img">
+                                                <img data-original="http://img2.wutuojia.com/pic/middle/product/t38/b128/20151208/122017_41585.png" src="http://img2.wutuojia.com/pic/middle/product/t38/b128/20151208/122017_41585.png" alt="骏业8090系列现代中式橡木红樱桃色小酒柜" class="inspiration-img" style="display: inline;">
+                                                <span></span>
+                                                </div>
+                                                <p>骏业8090系列现代中...</p>
+                                                <p class="brand-price">
+                                                    <em>¥</em>&nbsp;
+                                                    <span>3370.00</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>                                                                   
                                 </div>
                             </li>
                         </ul>
