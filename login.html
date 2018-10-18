@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="login-pop-box">
+        <!-- 登录 -->
+        <div class="register-box " style="display: block;">
+            <div class="login-head">           
+                <div class="login-main phone-reg" style="display: block;">
+                    <form id="fm1" class="fm-v clearfix" action="https://passport.wutuojia.com/postLogin" method="post">
+                        <div class="login-head">
+                            <h3>登录乌托家</h3>           
+                            <p>发现灵感，搜集所爱，美好家居就从这里开始。现在就登录乌托家搭建您心仪的家吧！</p>            
+                            <div class="login-head-btn">
+                                <a href="" class="wb-btn"><i></i>微博登录</a>
+                                <a href="" class="qq-btn"><i></i>QQ登录</a>
+                                <a href="" class="wx-btn"><i></i>微信登录</a>
+                            </div>
+                        </div>
+                        <div class="login-main">
+                            <ul>
+                                <li class="login-zi">
+                                    通过邮箱或手机号登录
+                                    <div class="loginErrorMsg" style="color: red;"></div>
+                                </li>
+                                <li>
+                                    <input id="loginEmail" name="username" type="text" placeholder="邮箱或手机号" value="">
+                                </li>
+                                <li class="password">
+                                    <input id="loginPass" name="password" type="password" placeholder="输入密码">
+                                </li>
+                                <li class="register-div">
+                                    <span class="fl">
+                                        <label>
+                                            <input name="rememberMe" type="checkbox" value="true">
+                                            下次自动登录
+                                        </label>
+                                    </span>
+                                    <span class="fr ">
+                                        <a href="">忘记密码</a>
+                                    </span>
+                                </li>
+                                <li class="login-submit">
+                                    <a id="wtjloginBtn" href="index.html">登录</a>
+                                </li>
+                                <li class="login-forget">
+                                    <i>还不是会员？</i> 
+                                    <a href="register.html" class="lj-register">立即注册</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

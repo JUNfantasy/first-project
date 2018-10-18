@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/ajax.js"></script>
+    <!-- <script src="js/register.js"></script> -->
+</head>
+<body>
+        <div class="login-pop-box">
+            <!-- 注册 -->
+            <div class="register-box " style="display: block;">
+                <div class="login-head">
+                    <h3>现在就加入乌托家</h3>
+                    <p>发现灵感，搜集所爱，美好家居就从这里开始。现在就登录乌托家搭建您心仪的家吧！</p>
+                    <div class="login-head-btn">
+                        <a href="" class="wb-btn">
+                            <i></i>
+                            微博登录
+                        </a>
+                        <a href="" class="qq-btn">
+                            <i></i>
+                            QQ登录
+                        </a>
+                        <a href="" class="wx-btn">
+                            <i></i>
+                            微信登录
+                        </a>
+                    </div>
+                </div>
+                <div class="register2-box" style="display: block;">                   
+                    <div class="login-main phone-reg" style="display: block;">
+                        <form id="registerPhoneSecondForm" action="" method="post">
+                            <ul class="register2-ul">
+                                <li>
+                                    <label>手机账户注册</label>
+                                    <input name="userPhone" id="userPhone" class="font14 register-ipt" type="text" placeholder="请输入您的手机号" data-pattern="^0?1[2-9][0-9]\d{8}$" >
+                                    <p id="phone" class="default">请输入正确的手机号</p>
+                                </li>
+                                <li>
+                                    <label>昵称</label>
+                                    <input  id="userName" class="font14 register-ipt" type="text" placeholder="起个响当当的名字吧" >
+                                    <p id="name" class="default">!支持中文、英文、数字、“-”、“_”的组合，4-20个字符</p>
+                                </li>
+                                <li>
+                                    <label>创建密码</label>
+                                    <input name="password" type="password" id="password" value="" class="font14 register-ipt" placeholder="输入8位以上数字或字母密码" data-pattern="^[a-z0-9A-Z_]{8,24}$">
+                                    <p id="pwd" class="default">!建议使用字母、数字和符号两种及以上的组合，6-20个字符</p>
+                                </li>
+                                <li>
+                                    <label>短信验证码</label>
+                                    <div class="control-field">
+                                        <input name="smsCode" value="" class="font14 register-ipt w60 " type="text" placeholder="输入短信验证码" id="yzm-pc" style="width:242px" >
+                                        <input type="button" class="ver-code w35 sendSmsBtn" value="获取验证码">
+                                    </div>                            
+                                </li>
+                                <li class="register-div">
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="checkService">
+                                        <span class="regist2-tk">创建账户的同时，我接受乌托家的 <a target="_blank" href="">服务条款</a> 和 <a target="_blank" href="">隐私制度</a></span>
+                                    </label>
+                                </li>
+                                <li class="login-submit">
+                                    <input type="submit" value="创建我的账户" class="registerBtn register-row-btn-on">
+                                </li>
+                                <li class="login-forget"> 
+                                    <a href="login.html" class="lj-register">登录</a>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        <script>
+            // 手机号
+            var oPhone =document.getElementById("userPhone");
+            var oPh = document.getElementById("phone")
+            oPhone.onblur=function(){
+				//获取输入的值
+				var sPhone = oPhone.value;
+				//如果内容为空,则不变化
+				if(sPhone==""){
+					oPh.className="default";
+					return 0;
+				}
+				//写正则 号码正则
+				var reg5=/^[0-9]{11,12}$/
+				//判断输入内容是否符合正则			
+				if(reg5.test(sPhone)){
+					oPh.className="hpass";
+				}else{
+					oPh.className="error";
+				}
+			}
+            // 昵称
+            //input聚焦span出现,失去焦点span消失
+			var oUser=document.getElementById("userName");
+            var oSpn1=document.getElementById("name");
+            //console.log(oUser)
+			oUser.onfocus=function(){
+				oSpn1.className="active";
+			}
+			oUser.onblur=function(){
+                var sUser = oUser.value;
+                //console.log(sUser)
+				if(sUser==""){
+					oSpn1.className="default";
+					return 0;
+				}
+				//正则1.用户名:支持中文、英文、数字、“-”、“_”的组合，4-20个字符	
+				var reg1=/^[\u4e00-\u9fa5a-zA-Z0-9\-_]{4,20}$/				
+				var reg1_1 = /^\d+$/;
+				if(reg1_1.test(sUser)){
+					oSpn1.className="error";
+					return 0;
+				}
+				if(reg1.test(sUser)){
+					oSpn1.className="default";
+				}else{
+					oSpn1.className="error";
+				}
+            }
+            // 密码
+            var oPass=document.getElementById("password");
+			var oPwd=document.getElementById("pwd");
+			oPass.onblur=function(){
+				//获取输入的值
+                var sUser4 = oPass.value;
+                console.log(sUser4)
+				//如果内容为空,则不变化
+				if(sUser4==""){
+					oPass.className="default";
+					return 0;
+				}
+				//写正则 建议使用字母、数字和符号两种及以上的组合，6-20个字符
+				var reg4=/^[a-z0-9\!\@\#\$\%\^\&\*\(\)\_]{6,20}$/
+				//密码合格; 强度验证;1. 数字; 2. 字母; 3. 特殊符号;			
+				var rate = 0;
+				var regNum = /\d/;
+				var regWord = /[a-z]/;
+				var regSymbol = /[\!\@\#\$\%\^\&\*\(\)\_]/;
+				if(regNum.test(sUser4)){
+					rate++;
+				}
+				if(regWord.test(sUser4)){
+					rate++;
+				}
+				if(regSymbol.test(sUser4)){
+					rate++;
+				}
+				//根据rate值判断
+				switch(rate){
+					case 1:
+						oPwd.className="error";
+						break;
+					case 2:
+                        oPwd.className="cpass";
+						break;
+					case 3:
+                        oPwd.className="hpass";
+						break;
+				}   
+			}
+        </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+
+
+.banner-all-box{ position:relative;}
+.tv-slideBox{  height:514px;    } 
+.tv-slideBox li{ overflow:hidden; position:relative; min-width:1200px; } 
+.tv-slideBox .prev,.tv-slideBox .next{ position:absolute; z-index:1;width:42px; height:78px; overflow:hidden; cursor:pointer; left:10px; top:50%; margin-top:-35px; background:url(http://www.wutuojia.com/images/front/wtjicon.png) no-repeat -125px  -30px; } 
+.tv-slideBox .next{ background-position:-168px  -30px; left:auto; right:10px; } 
+.tv-slideBox .prev:hover{background-position:-220px  -30px;}
+.tv-slideBox .next:hover{background-position:-265px  -30px;}
+.tv-slideBox .nextStop:hover{background-position:-168px  -30px; cursor:default;}
+.tv-slideBox .prevStop:hover{background-position:-125px  -30px; cursor:default;}
+ 
+.tv-slideBox  .img-div-slide{   height:514px; }
+.tv-slideBox .hd{ width:720px; left:480px;  height:40px; position:absolute;  top:90px;left:42% }
+.tv-slideBox .hd ul{ width:700px;  overflow:hidden; zoom:1; height:40px;} 
+.tv-slideBox .hd ul li{ margin-right:15px; display:inline-block; float:left; min-width:inherit; _display:inline; text-align:center; width:40px; height:40px; line-height: 40px;  } 
+.tv-slideBox .hd ul li span{ height: 100%; vertical-align: middle;  display:inline-block;}
+.tv-slideBox .hd ul li img{ width:40px;  vertical-align: middle;  cursor:pointer;opacity:0.7;   }
+
+.tv-slideBox .hd ul li.active img{opacity:1;  } 
+.active img{opacity:1;}
+.tv-slideBox .bd{ position:relative;}
+/* 上边文字 */
+.productdetails-nav{ height:52px; line-height:52px;}
+.productdetails-nav a{ padding-right:22px; display:inline-block; float:left; color:#999999; position:relative; height:12px; line-height:12px; margin-right:15px; margin-top:20px;}
+.productdetails-nav a i{ background:url(http://www.wutuojia.com/images/front/productdetailsicon.png) no-repeat 0 0; width:7px; height:12px; position:absolute;top:0; right:0px; cursor:default;}
+.productdetails-nav .product-title{max-width:340px;overflow:hidden; text-overflow:ellipsis; white-space:nowrap; cursor: default;}
+
+.banner-content{ background-color:#CCC; width:350px;  position:absolute; z-index: 2; bottom:0px; filter:alpha(opacity=85); -moz-opacity:0.85; opacity:0.85; padding:30px;}
+.banner-content h1{ font-weight:bold;font-size:25px;margin-bottom:10px; color:#000;}
+.banner-content p{ line-height:21px; color:#333333;}
+
+#banerdetails-box .tv-slideBox .hd .tempWrap{float: left; padding-left:12px;}
+#banerdetails-box .tv-slideBox .hd ul{ float:left; margin-left:14px; margin-right:14px;}
+#banerdetails-box  .tv-slideBox .hd{ width:760px;}
+/* 大图 */
+.productdetails-banner .pageState{ text-align:center; display:block; height:40px; line-height:40px; font-size:14px; color:#999999;}
+.productdetails-banner .pageState span{ color:#333333;}
+#banerdetails .img-div-slide img{  vertical-align:middle; }
+#banerdetails .img-div-slide  span{ vertical-align: middle; height: 100%; display: inline-block;}
+#banerdetails-box  #banerdetails  .img-div-slide{ text-align: center; vertical-align: middle; }
+/* 放大镜 */
+#small{width:300px;height:300px;position: relative;left:20%;top:10px;box-shadow: 0 0 5px #000;}
+#mo{width:100%;height:100%;position: absolute;z-index: 999}
+#frame{width:100px;height:100px;position: absolute;top:0;left:0;display:none;background:url(http://img2.wutuojia.com/pic/sq_small/product/t81/b389/20160721/094338_342633.png) no-repeat 0 0;background-size:300px 300px;}
+#big{width:300px;height:300px;position: absolute;left:50%;top:0;overflow: hidden;display:;box-shadow: 0 0 5px #000;}
+#big img{width:900px;height:900px;position: absolute;top:0;left:0}
+
+
+
+
+
